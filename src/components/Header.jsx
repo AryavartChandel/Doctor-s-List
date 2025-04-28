@@ -7,7 +7,9 @@ const Header = ({ doctors }) => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  
+  const handleSearch = (value) => {
+    setSearch(value);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
