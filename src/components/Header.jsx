@@ -18,11 +18,6 @@ const Header = ({ doctors }) => {
     navigate(`/?${qs.stringify(query)}`);
   };
 
-  const suggestions = search.length > 0
-    ? doctors.filter(doc =>
-        doc.name.toLowerCase().includes(search.toLowerCase())
-      ).slice(0, 3)
-    : [];
 
   return (
     <div>
